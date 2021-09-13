@@ -1,0 +1,17 @@
+.center
+{
+    text-align: center;
+}
+.list-inline
+{
+    text-align-last: right;
+    background-color: orange;
+}
+body
+{
+background-color: aquamarine;
+}
+#next
+{
+    border-radius: 10px;
+}

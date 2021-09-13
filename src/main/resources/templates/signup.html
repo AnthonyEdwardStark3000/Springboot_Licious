@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" th:href="@{/CSS/bootstrap-5.1.0-dist/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/CSS/style2.css}">
+    <link rel="stylesheet" th:href="@{/CSS/bootstrap-5.1.0-dist/css/all.min.css}">
+    <link rel="stylesheet" th:href="@{/CSS/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/webfonts/}">
+   
+</head>
+<body>
+    <section class="login py-5">
+        <div class="container">
+            <p class=" display-6 text-center font-weight-normal text-success">USER REGISTERATION</p>
+            <div class="row py-1">
+                <div class="col-lg-5">
+                    <p class="text-center mt-3" id="name">First Name</p>
+                </div>
+                <div class="col-lg-7">
+                    <input type="text" class="input text-center" px-3 placeholder="First name" id="fname">
+                </div>
+
+                 
+            <div class="row py-5" >
+                <div class="col-lg-5">
+                    <p class="text-center mt-3" id="name">Last Name</p>
+                </div>
+                <div class="col-lg-7">
+                    <input type="text" class="input text-center" px-3 placeholder="Last name" id="lname">
+                </div>
+
+                 
+            <div class="row py-5">
+                <div class="col-lg-5">
+                    <p class="text-center mt-3" id="name">Email-Id</p>
+                </div>
+                <div class="col-lg-7">
+                    <input type="email" class="input text-center px-3" placeholder="www.Exampleone@gmail.com" id="email">
+                </div>
+
+                 <div class="row py-1">
+                <div class="col-lg-5">
+                    <p class="text-center mt-3" id="name">User Name</p>
+                </div>
+                <div class="col-lg-7">
+                    <input type="text" class="input text-center" px-3 placeholder="User name" id="uname">
+                </div>
+                 
+                 
+            <div class="row py-5">
+                <div class="col-lg-5">
+                    <p class="text-center mt-3" id="name">Password</p>
+                </div>
+                <div class="col-lg-7">
+                    <input type="password" class="input text-center px-3" placeholder="password" id="password">
+                </div>
+
+                 
+            <div class="row py-5">
+                <div class="col-lg-5">
+                    <p class="text-center mt-3" id="name">Confirm password</p>
+                </div>
+                <div class="col-lg-7">
+                    <input type="password" class="input text-center px-3" placeholder="password" id="cnpass">
+                </div>
+           
+                <div class="text-center">
+                    <button class="btn-primary my-5" id="save">Submit</button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+ 
+<script th:src="@{/CSS/bootstrap-5.1.0-dist/js/jquery.min.js }"  type="text/javascript"></script>
+<script th:src="@{/JS/Register.js}"  type="text/javascript"></script>
+
+<script th:src="@{/CSS/bootstrap-5.1.0-dist/js/bootstrap.min.js}" type="text/javascript"></script>
+</html>
