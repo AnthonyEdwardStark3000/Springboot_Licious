@@ -12,6 +12,7 @@ $(document).ready(function(){
 	
 	function order_details_load()
 	{
+		
 		$.ajax({ 
         type: "GET",
         dataType: "json",
@@ -19,8 +20,24 @@ $(document).ready(function(){
         url: "http://localhost:8003/order_details_load",
             async: false,
         success: function(data){ 
-	   alert("Welcome : "+data["firstname"] +data["lastname"]);
-	    window.location.href="http://localhost:8003/Signup"
-	        }
+        var orderDetails=data["order_details_load"];
+        alert(orderDetails);	
+        var html="";
+        for(var i=0;i<orderDetails.length;i++)
+        {
+       var orders=orderDetails[i].split(",");
+ 
+      alert(orders[1]);
+        
+        html+="<div class='card'>";
+        html+="<div class='card-body'>";
+   		html+="<h5 class='card-title'>"+orders[1]+"</h5>";
+    	html+="<p class='card-text'>With supporting text below as a natural lead-in to additional content.</p>";
+  		html+="</div>";
+		html+="</div>";
+	      	
+        }  
+        $("#card").append(html);
+}
     });
 	}
