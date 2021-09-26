@@ -19,7 +19,7 @@ $.ajax({
             async: false,
         success: function(data){ 
 	   alert("Welcome : "+data["firstname"] +data["lastname"]);
-	    window.location.href="http://localhost:8003/Signup"
+	    window.location.href="http://localhost:8003/deliver"
 	        }
     });
 

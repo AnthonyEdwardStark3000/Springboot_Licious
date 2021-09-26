@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <style>
 body {
   font-family: "Lato", sans-serif;
@@ -76,14 +82,52 @@ align-self: flex-end;
 </div>
 <div class="row">
       <div class="col-lg-12 text-center">
+      
         <div id="card">
         
         </div>
         <h4> From the database</h4>
       </div>
  </div>
-<script th:src="@{/CSS/bootstrap-5.1.0-dist/js/jquery.min.js }"  type="text/javascript"></script>
-<script th:src="@{/JS/deliverypage.js}" type="text/javascript"></script>
+
+<div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm-4 modal-md-4">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title" style="text-align: center; font-size: 15px; font-weight: bold;">Product Details</h4>
+              <label for="productname" style="margin-top: 7px;">Name:</label>
+              <input type="text" name="productname" id="productname" placeholder="Productname # demo" disabled style="border-radius: 12px; align-items: center;padding-left: 18px;">
+            </div>
+            <div class="modal-body">
+             <label for="Totalprice" style="margin-bottom: 3px;">Price:</label>
+             <input type="text" name="price" id="productprice" placeholder="Current Price" disabled style="border-radius: 12px; align-items: center;padding-left: 18px;">
+             <hr>
+             <label for="Quantity" style="margin-top: 8px;">Quantity:</label>
+             <div class="input-group spinner" data-trigger="spinner">
+          <input type="text" class="form-control text-center" value="1" data-rule="quantity">
+          <div class="input-group-addon">
+            <a href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
+            <a href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </div>
+            
+            </div>
+            <div class="modal-footer">
+              <h3 style="text-align: center;font-size: 14;font-weight: bold;">Thank you for visiting our site!</h3>
+              <button class="btn btn-primary" onclick="save()">Submit</button>
+              <button type="button"  class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
    </div>
+   
+   <script th:src="@{/CSS/bootstrap-5.1.0-dist/js/jquery.min.js }"  type="text/javascript"></script>
+<script th:src="@{/JS/deliverypage.js}" type="text/javascript"></script>
+ <script th:src="@{/JS/jquery.spinner.js}"></script>
+
+
 </body>
 </html> 
