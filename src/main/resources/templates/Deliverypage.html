@@ -103,14 +103,21 @@ align-self: flex-end;
              <label for="Totalprice" style="margin-bottom: 3px;">Price:</label>
              <input type="text" name="price" id="productprice" placeholder="Current Price" disabled style="border-radius: 12px; align-items: center;padding-left: 18px;">
              <hr>
-             <label for="Quantity" style="margin-top: 8px;">Quantity:</label>
+             <label>Available Quantity</label>
+             <input type="text" id="AvailQuantity"placeholder="AvailableQuantity" disabled>
+             <br>
+             <label for="CurrentQuantity" style="margin-top: 8px;">current Quantity:</label>
              <div class="input-group spinner" data-trigger="spinner">
           <input type="text" class="form-control text-center" value="1" data-rule="quantity">
           <div class="input-group-addon">
-            <a href="javascript:;" class="spin-up" data-spin="up"><i class="fa fa-caret-up"></i></a>
-            <a href="javascript:;" class="spin-down" data-spin="down"><i class="fa fa-caret-down"></i></a>
+            <a href="javascript:;" class="spin-up current_qty" data-spin="up"><i class="fa fa-caret-up"></i></a>
+            <a href="javascript:;" class="spin-down current_qty" data-spin="down"><i class="fa fa-caret-down"></i></a>
           </div>
         </div>
+          <br>
+          <label>Current Price</label>
+          <input type="text"placeholder="Current price" id="currentPrice">
+          <br>
             
             </div>
             <div class="modal-footer">

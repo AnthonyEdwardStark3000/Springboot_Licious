@@ -9,6 +9,11 @@ function closeNav() {
 }
 $(document).ready(function(){
 	order_details_load();
+	
+	 $(".current_qty").click(function(){
+    alert("up function");
+      });
+	
 	});
 	
 	function order_details_load()
@@ -75,7 +80,8 @@ $(document).ready(function(){
 
 	   modal_orders=orders.split(",");
 	   $("#productname").val(modal_orders[1]);
-	   
+	   $("#productprice").val(modal_orders[2]);
+	   $("#AvailQuantity").val(modal_orders[4]);
        }
        
        function save()

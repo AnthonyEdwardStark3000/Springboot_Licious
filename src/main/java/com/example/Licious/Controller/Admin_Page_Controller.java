@@ -39,8 +39,8 @@ public class Admin_Page_Controller {
 	         ent1.setProductname(rege.getProductname());
 			 ent1.setProductprice(rege.getProductprice());
 			 ent1.setProductdate(rege.getProductdate());
+			 ent1.setQuantity(rege.getProductquantity());
 			 adminprep.save(ent1);
-			 
 			 
 		rege.setResult("done");
 		return new ResponseEntity<>(rege,HttpStatus.CREATED);

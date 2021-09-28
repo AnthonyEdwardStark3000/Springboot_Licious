@@ -7,7 +7,7 @@ $(document).ready(function(){
   var productname=$("#input-name").val();
   var productprice=$("#input-price").val();
   var productdate=$("#date").val();
- alert(productname+productprice+productdate);
+  var productquantity=$("#quantity").val();//variable names are declared in small to avoid namespace error
 $.ajax({ 
         type: "POST",
         dataType: "json",
@@ -17,6 +17,7 @@ $.ajax({
             "productname": productname,  
             "productprice":productprice,
             "productdate":productdate,
+            "productquantity":productquantity,
             
             }),
             async: false,

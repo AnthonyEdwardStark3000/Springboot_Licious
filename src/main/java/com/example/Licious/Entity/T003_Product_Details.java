@@ -15,6 +15,14 @@ public class T003_Product_Details {
 	public float Productprice;
 	public Date Productdate;
 	public Date Recorddate;
+	public int quantity;
+
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
 	public int getProductid() {
 		return Productid;
 	}

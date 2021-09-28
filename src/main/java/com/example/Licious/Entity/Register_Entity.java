@@ -16,8 +16,15 @@ public class Register_Entity {
 	public String productname;
 	public float productprice;
 	public Date productdate;
+	public int productquantity;
 	
 	
+	public int getProductquantity() {
+		return productquantity;
+	}
+	public void setProductquantity(int productquantity) {
+		this.productquantity = productquantity;
+	}
 	public String[] order_details_load;
 	
 	public String[] getOrder_details_load() {
